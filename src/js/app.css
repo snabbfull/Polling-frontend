@@ -1,0 +1,49 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  /* Расстояние между сообщениями */
+  padding: 15px;
+}
+
+.mail-box {
+  display: flex;
+  align-items: center;
+  /* Выравнивание по центру по вертикали */
+  justify-content: space-between;
+  /* Распределение по ширине */
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background-color: #fafafa;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+.user-name {
+  font-weight: bold;
+  color: #333;
+  flex: 1;
+  /* Занимает 1/3 ширины */
+  min-width: 0;
+  /* Позволяет сжиматься */
+}
+
+.text {
+  color: #555;
+  flex: 2;
+  /* Занимает 2/3 ширины */
+  min-width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /* Обрезает текст, если длинный */
+}
+
+.mail-time {
+  color: #999;
+  font-size: 0.9em;
+  text-align: right;
+  flex: 1;
+  /* Занимает 1/3 ширины */
+}
